@@ -21,12 +21,14 @@ function MainContainer() {
       <Tab.Navigator
         initialRouteName={homeName}
         screenOptions={({ route }) => ({
+          headerShown: false,
+          tabBarShowLabel: false,
           tabBarActiveTintColor: "#87CEEB",
           tabBarInactiveTintColor: "grey",
           tabBarLabelStyle: { paddingBottom: 10, fontSize: 10 },
           tabBarStyle: {
             padding: 10,
-            height: 90,
+            height: 80,
             elevation: 0, // for Android
             shadowOffset: {
               width: 0,
